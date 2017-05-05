@@ -5,6 +5,8 @@
  */
 package javaapplication5;
 
+import java.util.Date;
+
 /**
  *
  * @author SENA
@@ -14,7 +16,7 @@ public class basededatos {
     private String Nickusuario;
     private String Fotousuario;
     private String Mensaje;
-    private String Fechamensaje;
+    private Date Fechamensaje;
     
     public void settipochat(String tipochatP){
      this.tipochat=tipochatP;   
@@ -44,4 +46,12 @@ public class basededatos {
     {
         return Mensaje;
     }
+    public void setFechamensaje(Date FechamensajeP){
+     this.Fechamensaje=FechamensajeP;   
+    }
+    public Date getFechamensaje()
+    {
+        return Fechamensaje;
+    }
+    
 }
